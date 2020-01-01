@@ -132,12 +132,14 @@ network.train(data, all_y_trues)
 # Make some predictions
 emily = np.array([-7, -3]) # 128 pounds, 63 inches
 frank = np.array([20, 2])  # 155 pounds, 68 inches
-if network.feedforward(emily) > 0.5:
+rahul = np.array([51,4])
+tukku = np.array([105,10])
+if network.feedforward(rahul) > 0.5:
     print("Emily: Female") # 0.951 - F
 else:
-    print("Emily: Male")
-if network.feedforward(frank) > 0.5:
+    print("Rahul: Male")
+if network.feedforward(tukku) > 0.5:
     print("Frank: Female") # 0.951 - F
 else:
-    print("Frank: Male")
+    print("Tukku: Male")
 #print("Frank: %.3f" % network.feedforward(frank)) # 0.039 - M
